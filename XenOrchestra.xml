@@ -19,7 +19,7 @@ If you want to mount NFS shares for Remotes within docker, you need to enable pr
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1650662887</DateInstalled>
+  <DateInstalled>1650663072</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>Xen-Orchestra is a Web-UI for managing your existing XenServer infrastructure.&#xD;
@@ -57,5 +57,5 @@ If you want to mount NFS shares for Remotes within docker, you need to enable pr
   <Config Name="WebUI" Target="80" Default="8080" Mode="tcp" Description="HTTP WebUI" Type="Port" Display="always" Required="false" Mask="false">80</Config>
   <Config Name="WebUI HTTPS" Target="443" Default="8443" Mode="tcp" Description="HTTPS WebUI" Type="Port" Display="always" Required="false" Mask="false">8443</Config>
   <Config Name="Data xo-server" Target="/var/lib/xo-server" Default="/mnt/user/appdata/xen-orchestra/xo-server" Mode="rw" Description="Container Path: /var/lib/xo-server" Type="Path" Display="always" Required="false" Mask="false"/>
-  <Config Name="Data Redis" Target="/var/lib/redis" Default="" Mode="rw" Description="Container Path: /var/lib/redis" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Data Redis" Target="/var/lib/redis" Default="/mnt/user/appdata/xen-orchestra/redis" Mode="rw" Description="Container Path: /var/lib/redis" Type="Path" Display="always" Required="false" Mask="false"/>
 </Container>
