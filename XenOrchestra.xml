@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>XenOrchestra</Name>
+  <Repository>docker pull ronivay/xen-orchestra</Repository>
+  <Registry>https://hub.docker.com/r/ronivay/xen-orchestra</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://www.github.com/ronivay/xen-orchestra-docker</Support>
+  <Project>https://xen-orchestra.com</Project>
+  <Overview>Xen-Orchestra is a Web-UI for managing your existing XenServer infrastructure.&#xD;
+&#xD;
+If you want to mount NFS shares for Remotes within docker, you need to enable privilaged mode.</Overview>
+  <Category>Network:Management</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL/>
+  <Icon>https://xen-orchestra.com/assets/logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1650662887</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Xen-Orchestra is a Web-UI for managing your existing XenServer infrastructure.&#xD;
+&#xD;
+If you want to mount NFS shares for Remotes within docker, you need to enable privilaged mode.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>80</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>8443</HostPort>
+        <ContainerPort>443</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/var/lib/xo-server</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/var/lib/redis</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="WebUI" Target="80" Default="8080" Mode="tcp" Description="HTTP WebUI" Type="Port" Display="always" Required="false" Mask="false">80</Config>
+  <Config Name="WebUI HTTPS" Target="443" Default="8443" Mode="tcp" Description="HTTPS WebUI" Type="Port" Display="always" Required="false" Mask="false">8443</Config>
+  <Config Name="Data xo-server" Target="/var/lib/xo-server" Default="/mnt/user/appdata/xen-orchestra/xo-server" Mode="rw" Description="Container Path: /var/lib/xo-server" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Data Redis" Target="/var/lib/redis" Default="" Mode="rw" Description="Container Path: /var/lib/redis" Type="Path" Display="always" Required="false" Mask="false"/>
+</Container>
