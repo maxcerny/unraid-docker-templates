@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>XenOrchestra</Name>
-  <Repository>docker pull ronivay/xen-orchestra</Repository>
+  <Repository>ronivay/xen-orchestra</Repository>
   <Registry>https://hub.docker.com/r/ronivay/xen-orchestra</Registry>
   <Network>bridge</Network>
   <MyIP/>
