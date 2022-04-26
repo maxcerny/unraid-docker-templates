@@ -29,6 +29,11 @@
   <Environment>
     <Variable>
       <Value/>
+      <Name>DELAY</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
       <Name>INFLUXV1_URL</Name>
       <Mode/>
     </Variable>
@@ -69,6 +74,7 @@
     </Variable>
   </Environment>
   <Labels/>
+  <Config Name="DELAY" Target="DELAY" Default="300" Mode="" Description="Container Variable: DELAY" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="INFLUXV1_URL" Target="INFLUXV1_URL" Default="" Mode="" Description="Container Variable: INFLUXV1_URL" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="INFLUXV1_DATABASE_NAME" Target="INFLUXV1_DATABASE_NAME" Default="" Mode="" Description="INFLUXV1_DATABASE_NAME" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="INFLUXV1_NAME" Target="INFLUXV1_NAME" Default="" Mode="" Description="INFLUXV1_NAME" Type="Variable" Display="always" Required="false" Mask="false"/>
