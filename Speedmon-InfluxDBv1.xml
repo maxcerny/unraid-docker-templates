@@ -72,6 +72,11 @@
       <Name>INFLUXV1_SSL</Name>
       <Mode/>
     </Variable>
+    <Variable>
+      <Value/>
+      <Name>SERVERS</Name>
+      <Mode/>
+    </Variable>
   </Environment>
   <Labels/>
   <Config Name="DELAY" Target="DELAY" Default="300" Mode="" Description="Container Variable: DELAY" Type="Variable" Display="always" Required="true" Mask="false"/>
@@ -83,4 +88,5 @@
   <Config Name="INFLUXV1_PASSWORD" Target="INFLUXV1_PASSWORD" Default="" Mode="" Description="INFLUXV1_PASSWORD" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="INFLUXV1_VERIFY_SSL" Target="INFLUXV1_VERIFY_SSL" Default="" Mode="" Description="INFLUXV1_VERIFY_SSL" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="INFLUXV1_SSL" Target="INFLUXV1_SSL" Default="" Mode="" Description="INFLUXV1_SSL" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="SERVERS" Target="SERVERS" Default="" Mode="" Description="SERVERS" Type="Variable" Display="always" Required="false" Mask="false"/>
 </Container>
