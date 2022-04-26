@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Speedmon-InfluxDBv2</Name>
+  <Repository>speedmon</Repository>
+  <Registry>https://hub.docker.com/r/barrycarey/speedmon</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/barrycarey/Speedmon</Project>
+  <Overview>Automatically run periodic internet speed tests and save results to InfluxDB v1.</Overview>
+  <Category>Network:Other</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://github.com/maxcerny/unraid-docker-templates-icons/blob/c4d94c689d0921ab4dafdb0aeb7594b4fdb78e56/SpeedMon-Icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1650986949</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Automatically run periodic internet speed tests and save results to InfluxDB v2.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data/>
+  <Environment>
+    <Variable>
+      <Value/>
+      <Name>DELAY</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>INFLUXV2_URL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>INFLUXV2_TOKEN</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>INFLUXV2_ORG</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>INFLUXV2_BUCKET</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>INFLUXV2_NAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>INFLUXV2_VERIFY_SSL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>SERVERS</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="DELAY" Target="DELAY" Default="300" Mode="" Description="Container Variable: DELAY" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="INFLUXV2_URL" Target="INFLUXV2_URL" Default="" Mode="" Description="Container Variable: INFLUXV2_URL" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="INFLUXV2_TOKEN" Target="INFLUXV2_TOKEN" Default="" Mode="" Description="INFLUXV2_TOKEN" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="INFLUXV2_ORG" Target="INFLUXV2_ORG" Default="" Mode="" Description="INFLUXV2_ORG" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="INFLUXV2_BUCKET" Target="INFLUXV2_BUCKET" Default="" Mode="" Description="INFLUXV2_BUCKET" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="INFLUXV2_NAME" Target="INFLUXV2_NAME" Default="" Mode="" Description="INFLUXV2_NAME" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="INFLUXV2_VERIFY_SSL" Target="INFLUXV2_VERIFY_SSL" Default="" Mode="" Description="INFLUXV2_VERIFY_SSL" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="SERVERS" Target="SERVERS" Default="" Mode="" Description="SERVERS" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
