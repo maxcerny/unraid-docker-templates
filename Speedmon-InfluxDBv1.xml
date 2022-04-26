@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Speedmon-InfluxDBv1</Name>
+  <Repository>speedmon</Repository>
+  <Registry>https://hub.docker.com/r/barrycarey/speedmon</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/barrycarey/Speedmon</Project>
+  <Overview>Automatically run periodic internet speed tests and save results to InfluxDB v1.</Overview>
+  <Category>Network:Other</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://github.com/maxcerny/unraid-docker-templates-icons/blob/c4d94c689d0921ab4dafdb0aeb7594b4fdb78e56/SpeedMon-Icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1650986949</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Automatically run periodic internet speed tests and save results to InfluxDB v1.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data/>
+  <Environment>
+    <Variable>
+      <Value/>
+      <Name>INFLUXV1_URL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>INFLUXV1_DATABASE_NAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>INFLUXV1_NAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>INFLUXV1_PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>INFLUXV1_USER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>INFLUXV1_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>INFLUXV1_VERIFY_SSL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>INFLUXV1_SSL</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="INFLUXV1_URL" Target="INFLUXV1_URL" Default="" Mode="" Description="Container Variable: INFLUXV1_URL" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="INFLUXV1_DATABASE_NAME" Target="INFLUXV1_DATABASE_NAME" Default="" Mode="" Description="INFLUXV1_DATABASE_NAME" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="INFLUXV1_NAME" Target="INFLUXV1_NAME" Default="" Mode="" Description="INFLUXV1_NAME" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="INFLUXV1_PORT" Target="INFLUXV1_PORT" Default="" Mode="" Description="INFLUXV1_PORT" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="INFLUXV1_USER" Target="INFLUXV1_USER" Default="" Mode="" Description="INFLUXV1_USER" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="INFLUXV1_PASSWORD" Target="INFLUXV1_PASSWORD" Default="" Mode="" Description="INFLUXV1_PASSWORD" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="INFLUXV1_VERIFY_SSL" Target="INFLUXV1_VERIFY_SSL" Default="" Mode="" Description="INFLUXV1_VERIFY_SSL" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="INFLUXV1_SSL" Target="INFLUXV1_SSL" Default="" Mode="" Description="INFLUXV1_SSL" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
