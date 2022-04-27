@@ -13,7 +13,7 @@
   <Category>Network:Other</Category>
   <WebUI/>
   <TemplateURL/>
-  <Icon>https://github.com/maxcerny/unraid-docker-templates-icons/blob/c4d94c689d0921ab4dafdb0aeb7594b4fdb78e56/SpeedMon-Icon.png</Icon>
+  <Icon>https://github.com/maxcerny/unraid-docker-templates-icons/blob/c4d94c689d0921ab4dafdb0aeb7594b4fdb78e56/SpeedMon-Icon.png?raw=true</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
